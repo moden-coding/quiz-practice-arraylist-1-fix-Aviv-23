@@ -1,3 +1,4 @@
+
 /**
  *  Setup: The code is setup to take integer input from the user. The input will be
  *  added to an ArrayList called "values" until the user enters -1.
@@ -14,9 +15,7 @@
  *       print "7" because 4 and 3 are both less than 5 and the sum of 4 + 3 is 7
  */
 
-
 import java.util.*;
-
 
 public class App {
     public static void main(String[] args)  {
@@ -31,8 +30,15 @@ public class App {
             }
             values.add(input);
         }
+        int sum=0;
+        int input=Integer.valueOf(scanner.nextLine());
+        for(int numbers:values){
+if(numbers<input){
+sum=sum+numbers;
+}
+        }
 
-        System.out.println("");
+        System.out.println(sum);
         //Write your code below here
 
 
